@@ -4,7 +4,14 @@
   --color-text: #271756;
   --color-one: #facb01;
   --color-two: #161616;
+  --color-four: #525252;
+  --color-three: #f4f4f4;
+
   --color-bg-one: #fafcfe;
+  --color-bg-two: #f0f0f0;
+  --color-bg-three: #fffae6;
+  --color-bg-four: #e9e8ee;
+
   --color-hover-one: #d3d0dd;
   --color-hover-two: #524578;
 
@@ -86,3 +93,12 @@ ul {
   color: var(--color-hover-two);
 }
 /* End List */
+
+/* Button */
+.button {
+  padding: 8px 16px;
+  color: var(--color-hover-two);
+  background-color: transparent;
+  border: 1px solid var(--color-hover-two);
+}
+/* End Button */
