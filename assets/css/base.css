@@ -17,6 +17,9 @@
 
   --font-one: "Be Vietnam Pro", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 * {
   font-family: var(--font-one);
   box-sizing: border-box;
@@ -100,5 +103,11 @@ ul {
   color: var(--color-hover-two);
   background-color: transparent;
   border: 1px solid var(--color-hover-two);
+}
+.button-one {
+  opacity: 0.9;
+}
+.button-one:hover {
+  opacity: 1;
 }
 /* End Button */
