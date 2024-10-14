@@ -1,0 +1,132 @@
+.header-bottom .intro-general {
+    background-color: #f4f4f4;
+    border-top: 2px solid #FBD534;
+}
+
+.header-bottom .intro-general:hover {
+    opacity: 0.8;
+}
+
+#slider {
+    position: relative;
+    padding-top: 36%;
+    background: url('/assets/image/261020230225_rAUKl.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#slider .text-content {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    padding: 16px 108px 16px 48px;
+    top: 240px;
+}
+
+#slider .text-content h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.sub-nav {
+    margin-top: 32px;
+}
+
+.sub-nav .breadcrumb {
+    padding: 0px 32px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.breadcrumb a {
+    color: #0043D7;
+}
+
+.sub-nav .sub-nav-content li{
+    display: inline-block;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    padding: 0px 16px 10px;
+    margin-top: 24px;
+}
+
+.sub-nav .sub-nav-content li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.sub-nav li a {
+    color: #000;
+}
+
+/* Content */
+.content {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding: 0px 16px;
+    text-align: center;
+}
+
+.content .content-img img {
+    max-width: 700px;
+    margin-top: 24px;
+}
+
+.content .content-img p {
+    margin: 4px 0px;
+    font-style: italic;
+}
+
+.content .sub-content {
+    text-align: justify;
+    text-indent: 32px;
+    padding: 0px 16px;
+}
+
+.content .sub-content p {
+    line-height: 1.6;
+    margin-top: 24px;
+}
+/* End content */
+
+/* Learn more */
+.learn-more {
+    margin: 0px 32px 80px;
+}
+
+.learn-more h2 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    justify-content: center; 
+    gap: 16px; /* Khoảng cách giữa các khối */
+}
+
+.col {
+    flex: 1 1 0; /* Cho phép các cột mở rộng đều theo không gian có sẵn */
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px #000;
+}
+
+.learn-more img {
+    display: block;
+    margin: 32px auto 16px; /* Căn giữa ảnh theo chiều ngang */
+    width: 336px;
+    height: 180px;
+    border-radius: 12px;
+}
+
+.learn-more p {
+    margin-top: 8px;
+    margin-bottom: 48px;
+    margin-left: 28px;
+    color: #000;
+    font-weight: bold;
+}
+/* End learn more */
