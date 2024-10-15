@@ -173,7 +173,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 30px;
 }
+
+.section-one .inner-bottom .inner-list-enrollment .inner-box:nth-child(3) {
+  margin-right: 0;
+}
+
 .section-one .inner-bottom .inner-list-enrollment .inner-box h3 {
   color: var(--color-text);
   font-weight: 500;
@@ -471,6 +477,7 @@
   padding: 40px 0;
 }
 .inner-news-events .inner-title {
+  position: relative;
   font-size: 42px;
   color: var(--color-text);
   font-weight: 400;

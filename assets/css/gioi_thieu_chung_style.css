@@ -34,6 +34,7 @@
 
 .sub-nav {
     margin-top: 32px;
+    margin-right: 32px;
 }
 
 .sub-nav .breadcrumb {
@@ -44,6 +45,11 @@
 
 .breadcrumb a {
     color: #0043D7;
+}
+
+.sub-nav .sub-nav-content ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sub-nav .sub-nav-content li{
@@ -111,7 +117,7 @@
 .col {
     flex: 1 1 0; /* Cho phép các cột mở rộng đều theo không gian có sẵn */
     border-radius: 12px;
-    box-shadow: 2px 2px 8px #000;
+    box-shadow: 4px 4px 30px #00000026;
 }
 
 .learn-more img {
@@ -130,3 +136,11 @@
     font-weight: bold;
 }
 /* End learn more */
+
+.inner-news-events .inner-title {
+    text-align: left;
+}
+
+.inner-news-events .inner-title::after {
+    left: 0;
+}
