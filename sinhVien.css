@@ -1,0 +1,222 @@
+/* General Text Box */
+.text-box {
+  width: 300px;
+  border: none;
+  word-wrap: break-word; /* Ensure text does not overflow */
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Style for links in the header */
+header a {
+  text-decoration: none;
+  color: #271756;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal; /* Corrected font-weight */
+}
+
+header a:hover {
+  color: #271756;
+}
+
+/* Image Container for Semi-Transparent Overlay */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners */
+}
+
+/* Semi-transparent overlay on the image */
+.image-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* General Link Styling */
+a {
+  text-decoration: none;
+  color: #271756;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  padding-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #271756;
+  font-size: 15px;
+}
+
+.breadcrumb a:hover {
+  color: #00008b; /* Change color on hover */
+}
+
+/* Image and text alignment in the breadcrumb */
+.breadcrumb div {
+  text-align: center;
+  padding: 50px; /* Padding around each item */
+}
+
+.breadcrumb img {
+  width: 110px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px; /* Rounded image corners */
+}
+
+.breadcrumb p {
+  margin: 5px;
+  font-size: 17.5px;
+  padding: 5px;
+}
+
+.breadcrumb b {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+
+/* Button Styling */
+.xem-them-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid #a8a2bb;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.xem-them-btn:hover {
+  background-color: #f9ca01; /* Button hover effect */
+}
+
+.xem-them-btn::after {
+  content: " >";
+  font-size: 16px;
+  color: #a8a2bb;
+  margin-left: 10px;
+}
+
+/* "Tin Nổi Bật" Section Styling */
+.tin-noi-bat {
+  padding-left: 70px;
+  font-size: 40.5px;
+  color: #271756;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Yellow underline for headings */
+.yellow-underline {
+  position: relative;
+}
+
+.yellow-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #f9ca01;
+}
+
+/* Tin Nổi Bật Breadcrumb Section */
+.tin-noi-bat-breadcrumb {
+  padding-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tin-noi-bat-item {
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tin-noi-bat-item:hover {
+  transform: scale(1.02); /* Add hover effect */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.tin-noi-bat-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.tin-noi-bat-item p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0;
+  font-size: 16px;
+  color: #525252;
+}
+
+.tin-noi-bat-item b {
+  font-size: 17px;
+  color: #271756;
+}
+
+.tin-noi-bat-item div {
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners for each frame */
+  background-color: #f9f9f9;
+  position: relative;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  overflow: hidden; /* Đảm bảo không bị viền cắt ngang */
+}
+
+/* Anchors inside Tin Nổi Bật */
+.tin-noi-bat-breadcrumb a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: calc(50% - 20px); /* Two-column layout */
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tin-noi-bat-breadcrumb a:hover {
+  transform: scale(1.02); /* Slight hover effect */
+}
