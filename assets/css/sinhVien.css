@@ -150,7 +150,9 @@ a {
   height: 3px;
   background-color: #f9ca01;
 }
-
+.tin-noi-bat-breadcrumb + .image-container {
+  margin-top: 44px;
+}
 /* Tin Nổi Bật Breadcrumb Section */
 .tin-noi-bat-breadcrumb {
   padding-left: 70px;
@@ -219,4 +221,12 @@ a {
 
 .tin-noi-bat-breadcrumb a:hover {
   transform: scale(1.02); /* Slight hover effect */
+}
+
+.inner-news-events .inner-title {
+  text-align: left;
+}
+
+.inner-news-events .inner-title::after {
+  left: 0;
 }
