@@ -1,3 +1,7 @@
+.text-center {
+    text-align: center !important;
+}
+
 .header-bottom .intro-general {
     background-color: #f4f4f4;
     border-top: 2px solid #FBD534;
@@ -32,6 +36,7 @@
     font-size: 32px;
 }
 
+/* Sub navigation */
 .sub-nav {
     margin-top: 32px;
     margin-right: 32px;
@@ -62,10 +67,7 @@
 
 .sub-nav .sub-nav-content li:hover {
     border-bottom: 2px solid #000;
-}
-
-.sub-nav li a {
-    color: #000;
+    cursor: pointer;
 }
 
 /* Content */
@@ -95,6 +97,39 @@
 .content .sub-content p {
     line-height: 1.6;
     margin-top: 24px;
+}
+
+#tab2 .sub-content {
+    text-align: justify;
+    text-indent: 0;
+}
+
+.content #tab1 {
+    display: block;
+}
+
+#tab3 p {
+    text-align: justify;
+    text-indent: 32px;
+}
+
+#tab3 img {
+    margin-top: 32px;
+    max-width: 700px;
+}
+
+#tab3 .text-under-img {
+    margin-top: 4px;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.tab-content {
+    display: none; /* Ẩn tất cả các nội dung tab */
+}
+
+.active-tab {
+    display: block; /* Chỉ hiển thị tab đang được chọn */
 }
 /* End content */
 
