@@ -1,3 +1,8 @@
+.header-bottom .intro-general {
+    background-color: #f4f4f4;
+    border-top: 2px solid #FBD534;
+}
+
 .banner {
     position: relative;
     padding: 20%;  

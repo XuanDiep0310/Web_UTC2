@@ -6,6 +6,7 @@
   --color-two: #161616;
   --color-four: #525252;
   --color-three: #f4f4f4;
+  --color-four: #c6c6c6;
 
   --color-bg-one: #fafcfe;
   --color-bg-two: #f0f0f0;
@@ -62,7 +63,7 @@ ul {
 }
 @media (min-width: 1399.98px) {
   .container {
-    max-width: 1320px;
+    max-width: 1376px;
   }
 }
 /* End Container */
