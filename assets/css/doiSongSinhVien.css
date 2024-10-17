@@ -131,19 +131,26 @@
     line-height: 1.4;
 }
 
-.container {
+/* .container .learn-more{
     text-align: center;
-}
+} */
 
 .learn-more {
     display: inline-block;
     background-color: #FBD534;
     color: #525252;
-    padding: 12px;
+    padding: 10px 12px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 40px;
     cursor: pointer;
 }
+
+.club .learn-more {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
 .award {
     background-image: url(../image/Vector1-486uoFcb.svg);
     background-position: right; 
@@ -251,6 +258,7 @@
 }
 
 .youth-union img {
+    object-fit: cover;
     min-width: 85%;
     max-height: 160px;
     border-radius: 12px;
@@ -274,7 +282,10 @@
 }
 
 .youth-union .learn-more {
-    margin: 32px 0;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .text-ellipsis-2-lines {

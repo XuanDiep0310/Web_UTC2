@@ -89,3 +89,8 @@
     text-overflow: ellipsis;            /* Hiển thị dấu ba chấm */
     line-clamp: 2;                      /* Giới hạn số dòng tối đa là 2 (trong trường hợp hỗ trợ) */
 }
+
+.ti-angle-right {
+    font-size: 12px;
+    margin-left: 6px;
+}
