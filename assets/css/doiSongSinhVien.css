@@ -1,0 +1,287 @@
+.header-bottom .intro-general {
+    background-color: #f4f4f4;
+    border-top: 2px solid #FBD534;
+}
+
+.banner {
+    position: relative;
+    padding: 20%;
+    background: url('/assets/image/230820231008_qy9Xw.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h5 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 50%;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.3); 
+    color: #fff;
+    font-size: 32px;
+    font-weight: 300;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.breadcrumb > p { 
+    text-align: left;
+    margin: 28px 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color:blue;
+}
+
+.trip {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 64px;
+}
+
+.trip .text-trip {
+    position: relative;
+}
+
+.trip .text-trip h5 {
+    text-align: left;
+    font-size: 42px;
+    font-weight: 300;
+    margin: 12px 0;
+    color: #271756;
+}
+
+.trip .text-trip p {
+    text-align: left;
+    line-height: 1.2;
+    color: #525252;
+}
+
+.trip img {
+    max-width: 600px;
+}
+
+.trip .see-now {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #524578;
+    border: 1px solid #9b84e0;
+    padding: 6px;
+}
+
+.club .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.club h5 {
+    text-align: left;
+    font-size: 42px;
+    font-weight: 300;
+    color:#271756;
+    margin-bottom: 32px;
+}
+
+.club .col {
+    box-shadow: 4px 4px 30px #00000026;
+    border-radius: 12px;
+    height: 400px;
+}
+
+.club .col:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.club .col img {
+    display: block;
+    margin: 32px auto 16px; /* Căn giữa ảnh theo chiều ngang */
+    width: 84%;
+    height: 200px;
+    border-radius: 12px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: calc(100% / 3);
+}
+
+.club .img-title {
+    text-align: left;
+    margin-left: 28px;
+    color: #271756;
+    font-weight: bold;
+}
+
+.club .img-desc {
+    text-align: left;
+    margin-left: 28px;
+    margin-right: 28px;
+    color: #525252;
+    line-height: 1.4;
+}
+
+.container {
+    text-align: center;
+}
+
+.learn-more {
+    display: inline-block;
+    background-color: #FBD534;
+    color: #525252;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+.award {
+    background-image: url(../image/Vector1-486uoFcb.svg);
+    background-position: right; 
+    background-color: #facb01;
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+
+.award .award-title {
+    position: relative;
+    text-align: left;
+    font-size: 42px;
+    font-weight: 300;
+    color: #271756;
+    margin: 0;
+    padding: 32px 0 24px;
+    line-height: 1.4;
+}
+
+.award .award-title::after {
+    content: "";
+    background-color: #271756;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+}
+
+.award .col {
+    position: relative;
+    padding-bottom: 32px;
+}
+
+.award .award-desc {
+    position: absolute;
+    color: #525252;
+    left: 0;
+    top: 30%;
+}
+
+.award .see-now {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    border: 1px solid #271756;
+    padding: 10px;
+}
+
+.award .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.award img {
+    width: 100%;
+}
+
+.slider {
+    overflow: hidden;
+}
+  
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slide {
+    min-width: 100%;
+}
+
+/* Hoạt động Đoàn thanh niên */
+.youth-union h5 {
+    position: relative;
+    text-align: left;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #271756;
+    margin: 32px 0;
+}
+
+.youth-union h5::after {
+    content: "";
+    background-color: #facb01;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+}
+
+.youth-union .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.youth-union .col {
+    box-shadow: 4px 4px 30px #00000026;
+    border-radius: 12px;
+}
+
+.youth-union img {
+    min-width: 85%;
+    max-height: 160px;
+    border-radius: 12px;
+    margin: 32px 32px;
+}
+
+.youth-union p {
+    margin: 0px 36px;
+    text-align: left;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.youth-union .img-title {
+    font-size: 20px;
+    color: #271756;
+}
+
+.youth-union .img-desc {
+    color: #525252;
+}
+
+.youth-union .learn-more {
+    margin: 32px 0;
+}
+
+.text-ellipsis-2-lines {
+    display: -webkit-box;               /* Sử dụng kiểu box của WebKit */
+    -webkit-box-orient: vertical;       /* Định hướng box theo chiều dọc */
+    -webkit-line-clamp: 2;              /* Giới hạn số dòng tối đa là 2 */
+    overflow: hidden;                   /* Ẩn nội dung tràn */
+    text-overflow: ellipsis;            /* Hiển thị dấu ba chấm */
+    line-clamp: 2;                      /* Giới hạn số dòng tối đa là 2 (trong trường hợp hỗ trợ) */
+}
