@@ -40,6 +40,10 @@
   margin-top: 0;
   color: var(--color-one);
 }
+.header .header-top .inner-wrap .inner-menu .inner-list li:nth-last-child(2) {
+  margin-left: 20px;
+  margin-right: 10px;
+}
 .header .header-top .inner-wrap .inner-menu .inner-list li:nth-last-child(1) {
   display: none;
 }
@@ -601,9 +605,6 @@
   gap: 16px;
   margin-right: 15px;
   padding-bottom: 20px;
-}
-.inner-quick-link .inner-list .inner-box:nth-child(3) {
-  margin-right: 0;
 }
 .inner-quick-link .inner-list .inner-box:nth-child(3) {
   margin-right: 0;
