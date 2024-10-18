@@ -37,12 +37,15 @@
 .inner-one-section .inner-breadcrumb {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+}
+.inner-one-section .inner-breadcrumb a {
+  font-size: 13px;
 }
 .inner-one-section .inner-breadcrumb a:nth-child(1) {
   color: var(--color-five);
 }
-.inner-one-section .inner-breadcrumb a:nth-child(2) {
+.inner-one-section .inner-breadcrumb a:nth-child(n + 2) {
   color: var(--color-two);
 }
 .inner-one-section .inner-list-box {
@@ -82,14 +85,15 @@
 .inner-one-section .inner-list-box .inner-box a.inner-item span:nth-child(2) {
   font-size: 16px;
   color: var(--color-text);
+  margin-right: 0;
+  padding: 0;
 }
 .inner-one-section .inner-list-box .inner-box a.inner-item {
   font-size: 16px;
-  width: 137px;
-  height: 38px;
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  padding: 12px 16px;
 }
 .inner-one-section .inner-list-box .inner-box .inner-left {
   display: flex;
