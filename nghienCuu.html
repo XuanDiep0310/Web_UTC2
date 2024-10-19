@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/themify-icons/themify-icons.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -15,12 +19,13 @@
       href="/assets/image/logo-icon-GCU48TCC.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/sinhVien.css" />
-    <title>Sinh viên</title>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/nghienCuu.css" />
+    <title>Nghiên cứu</title>
   </head>
+
   <body>
     <!-- Header -->
     <div class="header">
@@ -37,13 +42,15 @@
             <div class="inner-menu">
               <ul class="inner-list">
                 <li><a href="/sinhVien.html">Sinh viên</a></li>
-                <li><a href="./cuuSinhVien.html">Cựu sinh viên</a></li>
+                <li><a href="#">Cựu sinh viên</a></li>
                 <li>
                   <a href="https://thuvien.utc2.edu.vn" target="_blank"
                     >Thư viện</a
                   >
                 </li>
-                <li><a href="./nghienCuu.html">Nghiên cứu</a></li>
+                <li>
+                  <a href="./nghienCuu.html " class="nghienCuu">Nghiên cứu</a>
+                </li>
                 <li><a href="#">Đảng - Đoàn thể</a></li>
                 <li><a href="#">Nội bộ</a></li>
                 <li>
@@ -85,118 +92,83 @@
       </div>
     </div>
     <!-- End Header -->
-
-    <div class="image-container">
-      <img src="./image/sinhVien.png" alt="Sinh viên UTC2" />
-    </div>
-    <div class="breadcrumb">
-      <p>
-        <a href="#" style="color: blue">Trang chủ</a> /
-        <a href="sinhVien.html">Sinh viên hiện tại</a>
-      </p>
-    </div>
-    <br />
-    <div class="breadcrumb">
-      <div>
-        <img src="./image/icon/thongBaoIcon.png" alt="Thông báo" />
-        <p class="text-box" style="color: #271756"><b>Thông báo</b></p>
-        <p class="text-box" style="color: #525252">
-          Tổng hợp các thông báo của nhà trường gửi đến sinh viên.
-        </p>
-        <button class="xem-them-btn" style="color: #737a9f">Xem thêm</button>
-      </div>
-      <div>
-        <img src="./image/icon/thoiKhoaBieuIcon.png" alt="Thời khoá biểu" />
-        <p class="text-box" style="color: #271756">
-          <b>Thời khoá biểu - Lịch thi</b>
-        </p>
-        <p class="text-box" style="color: #525252">Thời khoá biểu-Lịch thi</p>
-        <button class="xem-them-btn" style="color: #737a9f">Xem thêm</button>
-      </div>
-      <div>
-        <img
-          src="./image/icon/danhSachDichVuCongIcon.png"
-          alt="Danh sách dịch vụ công"
-        />
-        <p class="text-box" style="color: #271756">
-          <b>Danh sách Dịch vụ công</b>
-        </p>
-        <p class="text-box" style="color: #525252">
-          Tổng hợp dịch vụ công trực tuyến
-        </p>
-        <button class="xem-them-btn" style="color: #737a9f">Xem thêm</button>
-      </div>
-      <div>
-        <img src="./image/icon/doanThanhNienIcon.png" alt="Đoàn thanh niên" />
-        <p class="text-box" style="color: #271756"><b>Đoàn thanh niên</b></p>
-        <p class="text-box" style="color: #525252">
-          Giới thiệu, tin tức hoạt động đoàn cơ sở, đoàn trường. Thông tin báo
-          chí,...
-        </p>
-        <button class="xem-them-btn" style="color: #737a9f">Xem thêm</button>
-      </div>
-      <div>
-        <img src="./image/icon/hoiSinhVienIcon.png" />
-        <p class="text-box" style="color: #271756"><b>Hội sinh viên</b></p>
-        <p class="text-box" style="color: #525252">
-          Tổng hợp dịch vụ công trực tuyến dành cho sinh viên.
-        </p>
-        <button class="xem-them-btn" style="color: #737a9f">Xem thêm</button>
-      </div>
-    </div>
-    <div>
-      <p class="tin-noi-bat">
-        <span class="yellow-underline">Tin</span> nổi bật
-      </p>
-    </div>
-    <div class="tin-noi-bat-breadcrumb">
-      <a href="#" class="tin-noi-bat-item">
-        <div>
-          <img
-            src="./image/feartureNews/tinNoiBat1.png"
-            alt="Vòng chung kết cuộc thi văn hoá ứng xử trong sinh viên UTC2"
-          />
-          <p>
-            <b style="color: #271756"
-              >Vòng chung kết cuộc thi Văn hoá ứng xử trong sinh viên UTC2 năm
-              họ...</b
-            >
-          </p>
-          <p>
-            Tối ngày 26 tháng 12 năm 2020 tại Hội trường C1, Đoàn thanh niên
-            Phân hiệu đã tổ chức Vòng chung kết cuộc thi Văn hoá ứng xử trong...
-          </p>
+    <!-- Background  -->
+    <div class="inner-background">
+      <div class="inner-background-white">
+        <div class="container">
+          <div class="inner-wrap">
+            <h2 class="inner-title">Nguyên cứu</h2>
+            <span>Khám phá các nghiên cứu khoa học từ UTC2</span>
+          </div>
         </div>
-      </a>
-      <a href="#" class="tin-noi-bat-item">
-        <div>
-          <img
-            src="./image/feartureNews/tinNoiBat2.png"
-            alt="Đại hội đại biểu hội sinh viên Việt Nam UTC2"
-          />
-          <p>
-            <b style="color: #271756"
-              >ĐẠI HỘI ĐẠI BIỂU HỘI SINH VIÊN VIỆT NAM TRƯỜNG ĐẠI HỌC GIAO...</b
-            >
-          </p>
-          <p>
-            Sáng chủ nhật vừa qua (28/05/2023), tại Hội trường C1 đã tổ chức
-            thành công Đại hội Đại biểu Hội Sinh viên Việt Nam Trường Đại học...
-          </p>
-        </div>
-      </a>
-    </div>
-    <div class="image-container">
-      <img src="./image/thongTinSinhVien.png" alt="Thông tin sinh viên" />
-      <div class="content-img">
-        <h5>Thông tin cần thiết cho sinh viên mới</h5>
-        <p>
-          Chào mừng cac bạn tân sinh viên, hãy cùng UTC2 chuẩn bị hành trang tại
-          đây nhé!
-        </p>
-        <button type="submit">Bắt đầu ngay nào</button>
       </div>
     </div>
+    <!-- End Background  -->
+    <!-- nav -->
+    <div class="inner-nav">
+      <div class="container">
+        <div class="inner-wrap">
+          <ul class="list-nav">
+            <li><a href="#">Lĩnh vực nghiên cứu</a></li>
+            <li><a href="#">Dự án</a></li>
+            <li><a href="#">Quan hệ đối tác</a></li>
+            <li><a href="#">Công nghệ mới</a></li>
+            <li><a href="#">Tiêu chuẩn kỹ thuật</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End nav -->
+    <!-- section-study -->
+    <div class="section-study">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-breadcrumb">
+            <a href="./index.html">Trang chủ</a>
+            <a>/</a>
+            <a href="#">Nghiên cứu</a>
+          </div>
+          <div class="inner-field-study">
+            <div class="inner-content">
+              <h2 class="inner-title">Lĩnh vực nghiên cứu</h2>
+              <span class="inner-desc"
+                >Nền tảng của đột phá, và sâu xa hơn là của những tác động
+                truyền cảm hứng, nằm ở những khám phá mới. Thông qua những dự án
+                nghiên cứu mang tính ứng dụng, các ý tưởng tiềm năng được cộng
+                đồng chúng tôi đào sâu mỗi ngày để đặt nền móng cho những phương
+                pháp, kỹ thuật và vật liệu mới có thể đóng góp cải thiện xã
+                hội.</span
+              >
+            </div>
+            <div class="inner-image">
+              <img src="./assets/image/290820231039_gacGT.png" alt="" />
+            </div>
+          </div>
+          <a href="#" class="button button-one">
+            <span>Tìm hiểu thêm</span>
+            <img src="./assets/image/mui-ten.svg" alt="" />
+          </a>
+          <div class="inner-project">
+            <div class="inner-content">
+              <h2 class="inner-title">Dự án</h2>
+              <span class="inner-desc"
+                >Các giảng viên cũng như trí thức từ nhiều lĩnh vực khác nhau
+                cùng tham gia nghiên cứu khoa học để mang lại lợi ích cho cộng
+                đồng và thúc đẩy xã hội phát triển, thông qua tập trung đào sâu
+                vào các lĩnh vực như khoa học tính toán, công nghệ AI, môi
+                trường, y tế, kinh doanh và nhân văn.</span
+              >
+            </div>
+            <div class="inner-list-project">
+              <div class="inner-first">
+                <h4 class="inner-title"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End section-study -->
 
     <!-- inner-News-Events -->
     <div class="inner-news-events">
@@ -272,7 +244,6 @@
       </div>
     </div>
     <!-- End inner-News-Events -->
-
     <!-- Footer -->
     <div class="footer">
       <div class="container">
