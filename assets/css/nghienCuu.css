@@ -82,8 +82,7 @@
 .section-study .inner-breadcrumb a:nth-child(n + 2) {
   color: var(--color-two);
 }
-/* End section-study */
-/* section-study */
+
 .section-study .inner-wrap {
   display: flex;
   flex-direction: column;
