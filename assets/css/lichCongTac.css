@@ -1,0 +1,7 @@
+.content .inner-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.content .inner-content 
