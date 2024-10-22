@@ -90,4 +90,187 @@
 .inner-feature-news .inner-wrap {
     display: flex;
     justify-content: space-between;
+    gap: 32px;
+}
+
+.filter {
+    width: 25%;
+}
+
+.filter .title {
+    font-size: 32px;
+    font-weight: 300;
+    color: #161616;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.filter .search-event {
+    position: relative;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #000;
+}
+
+.filter .search-event i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.filter .search-input {
+    background-color: #f4f4f4;
+    width: 100%;
+    border: none;
+    padding: 14px;
+    padding-left: 48px;
+}
+
+.filter .filter-datetime-title {
+    font-size: 16px;
+    color: #525252;
+    font-weight: 600;
+    margin: 20px 0 12px 0;
+}
+.filter .filter-datetime {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #000;
+}
+
+.filter .filter-datetime input {
+    background-color: #f4f4f4;
+    border: none;
+    padding: 14px 0;
+    padding-left: 16px;
+    width: 45%;
+}
+
+.filter .filter-category-title {
+    font-size: 16px;
+    color: #525252;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.filter .filter-category-title ~ .box {
+    display: block;
+    font-size: 14px;
+    margin-top: 12px;
+    color: #161616;
+}
+
+.filter .filter-category-title ~ .box input {
+    margin-left: 4px;
+    margin-right: 10px;
+    transform: scale(1.4);  /* Phóng to checkbox lên 1.2 lần */
+}
+
+.filter .btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.filter .btn .apply {
+    background-color: #FBD534;
+    padding: 12px 44px;
+}
+
+.filter .btn .refresh {
+    border: 1px solid #000;
+    padding: 12px 44px;
+}
+
+
+/* Event */
+.news-event {
+    width: 75%;
+    box-shadow: 0 0 2px #00000026;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.news-event .event {
+    width: 100%;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #A8A8A8;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-top: 32px;
+    padding-right: 16px;
+}
+
+.news-event .event .img-event {
+    max-width: 16%;
+}
+
+.news-event .event .img-event img {
+    /* width: 100%; */
+    object-fit: cover;
+    border-radius: 12px;
+    height: 100px;
+    width: 140px;
+}
+
+.news-event .event .title-event h5 {
+    color: #271756;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.news-event .event .time-update {
+    font-style: italic;
+    color: #A8A8A8;
+}
+
+/* End event */
+
+/* Tùy chỉnh toàn bộ nền của datepicker */
+.ui-datepicker {
+    background-color: #f4f4f4; 
+    padding: 12px;
+    box-shadow: 2px 2px 16px #00000026; /* Bóng đổ mờ */
+}
+
+/* Tùy chỉnh phần đầu (tháng và năm) của datepicker */
+.ui-datepicker-header {
+    background-color: #f4f4f4;  /* Màu nền của header */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Tùy chỉnh vị trí nút Prev */
+.ui-datepicker-prev {
+    position: absolute;
+    left: 10px;
+}
+
+/* Tùy chỉnh vị trí nút Next */
+.ui-datepicker-next {
+    position: absolute;
+    right: 10px;
+}
+
+/* Tùy chỉnh các ô ngày trong bảng lịch */
+.ui-datepicker-calendar td {
+    padding: 10px;
+}
+
+/* Tùy chỉnh ngày hiện tại */
+.ui-datepicker-today {
+    background-color: #e6e6e6; /* Màu nền cho ngày hiện tại */
+}
+
+.news-event {
+    width: 75%;
 }
