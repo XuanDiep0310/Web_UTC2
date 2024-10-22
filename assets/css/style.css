@@ -495,6 +495,7 @@
   width: 48px;
   height: 4px;
   border-radius: 4px;
+  margin-top: 5px;
   position: absolute;
   right: calc(50% - 24px);
 }
