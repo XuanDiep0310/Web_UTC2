@@ -10,6 +10,11 @@
     font-weight: 600;
 }
 
+.inner-list li a.noiBo {
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
 .content {
     background-color: #f9f9f9;
 }
@@ -53,6 +58,15 @@
     cursor: pointer;
 }
 
+table.schedule{
+    border-collapse: collapse;
+}
+
+.schedule td {
+    border: 1px solid #ccc;
+    line-height: 1.4;
+}
+
 .content .work-schedule .schedule thead td {
     background-color: #FDEA99;
     padding: 16px;
@@ -62,16 +76,6 @@
 .content .work-schedule .schedule td {
     font-size: 14px;
     padding: 16px;
-    border-top: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-}
-
-.content .work-schedule .schedule .sunday td {
-    border-bottom: 1px solid #ccc;
-}
-
-.content .work-schedule .schedule .border-right {
-    border-right: 1px solid #ccc;
 }
 
 .content .work-schedule .print-schedule {
