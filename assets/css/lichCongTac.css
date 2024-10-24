@@ -1,7 +1,165 @@
+.text-red {
+    color: rgb(219, 23, 23) !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.content {
+    background-color: #f9f9f9;
+}
+
 .content .inner-content {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    padding-top: 32px;
 }
 
-.content .inner-content 
+.content .inner-content .work-schedule {
+    max-width: 65%;
+}
+
+.content .work-schedule .title {
+    font-size: 32px;
+    font-weight: 400;
+    color: #271756;
+    width: 80%;
+}
+
+.content .work-schedule .time-view {
+    color: #161616;
+}
+
+.content .work-schedule .time-view b {
+    font-weight: 600;
+}
+
+.content .work-schedule .time-view .time {
+    padding: 20px 0;
+    padding-right: 40px;
+}
+
+.content .work-schedule .time-view i {
+    color: rgb(82, 82, 252);
+    font-size: 24px;
+    margin: 32px 0;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.content .work-schedule .schedule thead td {
+    background-color: #FDEA99;
+    padding: 16px;
+    text-align: center;
+}
+
+.content .work-schedule .schedule td {
+    font-size: 14px;
+    padding: 16px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.content .work-schedule .schedule .sunday td {
+    border-bottom: 1px solid #ccc;
+}
+
+.content .work-schedule .schedule .border-right {
+    border-right: 1px solid #ccc;
+}
+
+.content .work-schedule .print-schedule {
+    margin-top: 32px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.content .work-schedule .print-schedule p {
+    padding: 12px;
+    background-color: #FACB01;
+    width: max-content;
+}
+
+.content .work-schedule .print-schedule i {
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+/* Cổng thông tin */
+.content .inner-content .portal-work-schedule {
+    max-width: 35%;
+}
+
+.content .inner-content .news {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.content .inner-content .portal-work-schedule .recent-news {
+    font-size: 20px;
+    color: #271756;
+}
+
+.content .inner-content .portal-work-schedule .news-img {
+    cursor: pointer;
+    width: 20%;
+    margin-bottom: 16px;
+}
+
+.content .inner-content .portal-work-schedule img {
+    object-fit: cover;
+    width: 100%;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.content .inner-content .portal-work-schedule .news-desc {
+    cursor: pointer;
+    width: 80%;
+}
+
+.content .inner-content .portal-work-schedule .news-desc p {
+    margin: 0;
+    font-weight: 600;
+    color: #271756;
+}
+
+.content .notification {
+    color: #271756;
+}
+
+.content .notification h5 {
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.content .notification p {
+    margin-bottom: 60px;
+}
+
+.content .notification p a {
+    color: #271756;
+    font-weight: 600;
+}
+
+.see-all {
+    color: #524578;
+    margin-top: 0;
+    padding: 8px 20px;
+    border: 1px solid #524578;
+    text-align: center;
+    width: max-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
