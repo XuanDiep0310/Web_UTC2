@@ -71,7 +71,7 @@
   height: 4px;
   border-radius: 10px;
   width: 50px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .section-party-union .inner-wrap span.inner-desc {
   color: var(--color-si);
@@ -180,7 +180,7 @@
   height: 4px;
   border-radius: 10px;
   width: 50px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .section-youth-group .inner-list-yg {
   display: flex;
@@ -221,6 +221,5 @@
 }
 .inner-news-events .container .inner-wrap h2.inner-title::after {
   left: 0;
-  top: 52px;
 }
 /* End section-youth-group */

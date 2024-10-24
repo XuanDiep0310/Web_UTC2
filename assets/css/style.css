@@ -495,7 +495,7 @@
   width: 48px;
   height: 4px;
   border-radius: 4px;
-  margin-top: 5px;
+  margin-top: 20px;
   position: absolute;
   right: calc(50% - 24px);
 }
@@ -532,6 +532,12 @@
   font-weight: 500;
   margin-top: 20px;
   text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
 }
 .inner-news-events .list-box .inner-box-list {
   height: 500px;
@@ -567,6 +573,12 @@
   margin: 0;
   font-size: 16px;
   color: var(--color-text);
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
 }
 .inner-news-events .inner-button {
   display: flex;

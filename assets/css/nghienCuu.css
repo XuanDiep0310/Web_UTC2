@@ -102,7 +102,7 @@
   height: 4px;
   border-radius: 10px;
   width: 50px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .section-study .inner-wrap span.inner-desc {
   color: var(--color-si);
@@ -254,7 +254,7 @@
   height: 4px;
   border-radius: 10px;
   width: 50px;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 .section-research-partners .inner-wrap .inner-desc {
   color: var(--color-si);
@@ -288,7 +288,7 @@
 }
 .section-research-partners .inner-box-srp {
   width: 288px;
-  height: 170px;
+  height: 175px;
   padding: 32px;
   background: #ffffff;
   border-radius: 20px;
@@ -298,7 +298,15 @@
   text-overflow: ellipsis;
   gap: 15px;
 }
-.section-research-partners .inner-box-srp span.inner-desc {
+.section-research-partners .inner-wrap .inner-box-srp .desc-one {
+  color: var(--color-si);
+  font-size: 16px;
+  font-weight: 300;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
 }
-
 /* End section-research-partners */
