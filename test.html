@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .slider-container {
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        user-select: none;
+      }
+
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .slide {
+        min-width: 25%; /* Mỗi slide chiếm 25% để hiển thị 4 ảnh */
+        box-sizing: border-box;
+      }
+
+      .slide img {
+        width: 100%;
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="slider-container">
+        <div class="slider-container">
+                <div class="slider">
+                  <div class="slide"><img src="./assets/image1.webp" alt="Hình 1" /></div>
+                  <div class="slide"><img src="./assets/image2.webp" alt="Hình 2" /></div>
+                  <div class="slide"><img src="./assets/image3.webp" alt="Hình 3" /></div>
+                  <div class="slide"><img src="./assets/image4.webp" alt="Hình 4" /></div>
+                  <div class="slide"><img src="./assets/image5.webp" alt="Hình 5" /></div>
+                  <div class="slide"><img src="./assets/image6.webp" alt="Hình 6" /></div>
+                  <div class="slide"><img src="./assets/image7.webp" alt="Hình 7" /></div>
+                  <div class="slide"><img src="./assets/image8.webp" alt="Hình 8" /></div>
+                  <div class="slide"><img src="./assets/image9.webp" alt="Hình 9" /></div>
+                  <div class="slide"><img src="./assets/image10.webp" alt="Hình 10" /></div>
+                </div>
+              </div>
+              
+    <script>
+      const slider = document.querySelector(".slider");
+const slides = document.querySelectorAll(".slide");
+const totalSlides = slides.length;
+const slidesPerPage = 4;
+
+let currentSlide = 0;
+const autoSlideIntervalTime = 3000;
+let autoSlideInterval = setInterval(moveToNextSet, autoSlideIntervalTime);
+
+// Hàm di chuyển tới nhóm slide tiếp theo
+function moveToNextSet() {
+  currentSlide += slidesPerPage;
+
+  // Nếu còn ít hơn 4 ảnh cuối cùng
+  if (currentSlide >= totalSlides) {
+    currentSlide = 0; // Quay lại từ đầu
+  }
+
+  updateSliderPosition();
+}
+
+// Cập nhật vị trí của slider dựa trên currentSlide
+function updateSliderPosition() {
+  // Nếu còn ít hơn 4 ảnh cuối, thêm các ảnh từ đầu để đủ 4 ảnh
+  if (currentSlide + slidesPerPage > totalSlides) {
+    const extraSlides = currentSlide + slidesPerPage - totalSlides;
+    slider.style.transition = "none"; // Bỏ hiệu ứng chuyển tiếp
+    slider.style.transform = `translateX(-${(currentSlide - extraSlides) * 25}%)`;
+    setTimeout(() => {
+      slider.style.transition = "transform 0.5s ease"; // Thêm lại hiệu ứng
+      slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+    }, 0);
+  } else {
+        
+    slider.style.transform = `translateX(-${currentSlide * 25}%)`;
+  }
+}
+
+// Sự kiện kéo (drag) để người dùng cuộn qua các ảnh
+let isDragging = false;
+let startPos = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+
+slider.addEventListener("mousedown", (e) => {
+  isDragging = true;
+  startPos = e.pageX - slider.offsetLeft;
+  clearInterval(autoSlideInterval);
+});
+
+slider.addEventListener("mousemove", (e) => {
+  if (!isDragging) return;
+  const currentPosition = e.pageX - slider.offsetLeft;
+  currentTranslate = prevTranslate + ((currentPosition - startPos) / slider.offsetWidth) * 100;
+  slider.style.transform = `translateX(${currentTranslate}%)`;
+});
+
+slider.addEventListener("mouseup", () => {
+  isDragging = false;
+  const movedBy = currentTranslate - prevTranslate;
+  if (movedBy < -15) {
+    currentSlide = Math.min(currentSlide + slidesPerPage, totalSlides - slidesPerPage);
+  } else if (movedBy > 15) {
+    currentSlide = Math.max(currentSlide - slidesPerPage, 0);
+  }
+  updateSliderPosition();
+  prevTranslate = -currentSlide * (100 / slidesPerPage);
+  autoSlideInterval = setInterval(moveToNextSet, autoSlideIntervalTime);
+});
+
+slider.addEventListener("mouseleave", () => {
+  if (isDragging) {
+    slider.dispatchEvent(new Event("mouseup"));
+  }
+});
+
+    </script>
+  </body>
+</html>
