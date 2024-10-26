@@ -4,14 +4,18 @@ const bar = document.querySelector(
 );
 const menuLeft = document.querySelector(".menu-left");
 const closeMenu = document.querySelector(".menu-left .menu-left-color");
+bar.addEventListener("click", () => {
+  menuLeft.style.display = "block";
+});
 document.addEventListener("click", (event) => {
-  if (!closeMenu.contains(event.target)) {
+  if (!closeMenu.contains(event.target) && !bar.contains(event.target)) {
     closeMenu.style.display = "none";
     menuLeft.style.display = "none";
   }
 });
 bar.addEventListener("click", () => {
   menuLeft.style.display = "block";
+  closeMenu.style.display = "block";
 });
 // Search
 const search = document.querySelector(
