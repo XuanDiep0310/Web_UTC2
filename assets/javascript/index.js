@@ -1,3 +1,37 @@
+// click bar
+const bar = document.querySelector(
+  ".header .header-top .inner-wrap .inner-menu .inner-list li:nth-last-child(1)"
+);
+const menuLeft = document.querySelector(".menu-left");
+bar.addEventListener("click", () => {
+  menuLeft.style.display = "block";
+});
+// Search
+const search = document.querySelector(
+  ".header .header-top .inner-wrap .inner-menu .inner-list a.nav-link"
+);
+const searchIcon = document.querySelector(
+  ".header .header-top .inner-wrap .inner-menu .inner-list a.nav-link i"
+);
+const searchOut = document.querySelector(
+  ".header .header-top .inner-wrap .inner-menu .inner-list .input-search"
+);
+search.addEventListener("click", () => {
+  searchOut.style.display = "inline";
+  search.style.padding = "0";
+  searchIcon.style.left = "35px";
+  searchIcon.style.color = "#525252";
+});
+
+document.addEventListener("click", (event) => {
+  if (!search.contains(event.target) && !searchOut.contains(event.target)) {
+    searchOut.style.display = "none";
+    search.style.padding = "15px 16px";
+    searchIcon.style.left = "0";
+    searchIcon.style.color = "#ffffff";
+  }
+});
+
 // Tạo biến tham chiếu đến modal và hình ảnh trong modal
 const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
