@@ -92,10 +92,21 @@ const slides = document.querySelectorAll(
   ".inner-center .inner-list-cer .inner-box"
 );
 const size_slides = slides.length;
-const a = 4;
-
+let a = 4;
+let b = 25;
 let start_slides = 0;
 let autoPlay = setInterval(() => {
+  let d = window.innerWidth;
+  if (d <= 992 && d > 576) {
+    a = 2;
+    b = 50;
+  } else if (d <= 576) {
+    a = 1;
+    b = 100;
+  } else {
+    a = 4;
+    b = 25;
+  }
   start_slides += a;
   if (start_slides >= size_slides) {
     start_slides = 0;
@@ -106,9 +117,9 @@ let autoPlay = setInterval(() => {
 function sliderToScroll() {
   if (start_slides + a > size_slides) {
     const tmp = start_slides + a - size_slides;
-    slider.style.transform = `translateX(-${(start_slides - tmp) * 25}%)`;
+    slider.style.transform = `translateX(-${(start_slides - tmp) * b}%)`;
   } else {
-    slider.style.transform = `translateX(-${start_slides * 25}%)`;
+    slider.style.transform = `translateX(-${start_slides * b}%)`;
   }
 }
 // Dừng autoplay khi hover
