@@ -3,6 +3,13 @@ const bar = document.querySelector(
   ".header .header-top .inner-wrap .inner-menu .inner-list li:nth-last-child(1)"
 );
 const menuLeft = document.querySelector(".menu-left");
+const closeMenu = document.querySelector(".menu-left .menu-left-color");
+document.addEventListener("click", (event) => {
+  if (!closeMenu.contains(event.target)) {
+    closeMenu.style.display = "none";
+    menuLeft.style.display = "none";
+  }
+});
 bar.addEventListener("click", () => {
   menuLeft.style.display = "block";
 });
@@ -21,6 +28,7 @@ search.addEventListener("click", () => {
   search.style.padding = "0";
   searchIcon.style.left = "35px";
   searchIcon.style.color = "#525252";
+  search.classList.remove("hov");
 });
 
 document.addEventListener("click", (event) => {
@@ -29,6 +37,7 @@ document.addEventListener("click", (event) => {
     search.style.padding = "15px 16px";
     searchIcon.style.left = "0";
     searchIcon.style.color = "#ffffff";
+    search.classList.add("hov");
   }
 });
 
