@@ -92,7 +92,7 @@ ul {
 }
 .inner-list-two li a {
   color: var(--color-text);
-  /* font-weight: 600; */
+  font-weight: 600;
 }
 .inner-list-two li a:hover {
   color: var(--color-hover-two);
