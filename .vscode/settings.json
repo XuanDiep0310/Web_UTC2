@@ -1,3 +1,7 @@
 {
-  "livePreview.defaultPreviewPath": "/test.html"
+  "livePreview.defaultPreviewPath": "/test.html",
+  "files.associations": {
+    "xstring": "cpp",
+    "vector": "cpp"
+  }
 }
