@@ -1290,5 +1290,8 @@
   .footer .inner-list-second .inner-second {
     width: 100%;
   }
+  .footer .inner-list-second .inner-second:nth-child(4) {
+    margin-top: 30px;
+  }
 }
 /* Edd Footer */
