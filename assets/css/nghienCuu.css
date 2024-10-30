@@ -83,6 +83,14 @@
     font-size: 14px;
   }
 }
+@media (max-width: 575.98px) {
+  .inner-background .inner-background-white {
+    padding: 0;
+  }
+  .inner-background .inner-background-white .container {
+    margin: 0;
+  }
+}
 /* End Background */
 /* nav */
 .inner-nav {
