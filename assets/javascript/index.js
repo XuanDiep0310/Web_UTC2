@@ -17,6 +17,56 @@ bar.addEventListener("click", () => {
   menuLeft.style.display = "block";
   closeMenu.style.display = "block";
 });
+// Tìm tất cả các nút "inner-show" và thêm sự kiện click cho từng nút
+document
+  .querySelectorAll(
+    ".inner-show-gtc, .inner-show-dt, .inner-show-ds, .inner-show-sv, .inner-show-csv, .inner-show-nc, .inner-show-ddt, .inner-show-nb"
+  )
+  .forEach((button) => {
+    button.addEventListener("click", () => {
+      // Xác định các phần tử liên quan đến nút được click
+      let content, col;
+
+      if (button.classList.contains("inner-show-gtc")) {
+        content = button.closest("li.inner-item").querySelector(".list-gtc");
+        col = button.closest("li.inner-item").querySelector("a.list-gt");
+      } else if (button.classList.contains("inner-show-dt")) {
+        content = button.closest("li.inner-item").querySelector(".list-train");
+        col = button.closest("li.inner-item").querySelector("a.list-dt");
+      } else if (button.classList.contains("inner-show-ds")) {
+        content = button.closest("li.inner-item").querySelector(".list-ds");
+        col = button.closest("li.inner-item").querySelector("a.list-sl");
+      } else if (button.classList.contains("inner-show-sv")) {
+        content = button.closest("li.inner-item").querySelector(".list-sv");
+        col = button.closest("li.inner-item").querySelector("a.list-vs");
+      } else if (button.classList.contains("inner-show-csv")) {
+        content = button.closest("li.inner-item").querySelector(".list-csv");
+        col = button.closest("li.inner-item").querySelector("a.list-c");
+      } else if (button.classList.contains("inner-show-nc")) {
+        content = button.closest("li.inner-item").querySelector(".list-nc");
+        col = button.closest("li.inner-item").querySelector("a.list-cn");
+      } else if (button.classList.contains("inner-show-ddt")) {
+        content = button.closest("li.inner-item").querySelector(".list-ddt");
+        col = button.closest("li.inner-item").querySelector("a.list-tdd");
+      } else if (button.classList.contains("inner-show-nb")) {
+        content = button.closest("li.inner-item").querySelector(".list-nb");
+        col = button.closest("li.inner-item").querySelector("a.list-bn");
+      }
+
+      // Thay đổi trạng thái hiển thị của nội dung và thêm/xóa lớp theo trạng thái
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+        button.classList.add("up");
+        col.classList.add("active");
+      } else {
+        content.style.display = "none";
+        button.classList.remove("up");
+        col.classList.remove("active");
+      }
+    });
+  });
+
+//
 // Search
 const search = document.querySelector(
   ".header .header-top .inner-wrap .inner-menu .inner-list a.nav-link"
