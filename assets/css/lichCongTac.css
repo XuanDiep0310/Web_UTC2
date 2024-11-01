@@ -27,7 +27,7 @@
 }
 
 .content .inner-content .work-schedule {
-    max-width: 65%;
+    width: 65%;
 }
 
 .content .work-schedule .title {
@@ -97,7 +97,7 @@ table.schedule{
 
 /* Cổng thông tin */
 .content .inner-content .portal-work-schedule {
-    max-width: 35%;
+    width: 35%;
 }
 
 .content .inner-content .news {
@@ -167,3 +167,39 @@ table.schedule{
     cursor: pointer;
 }
 
+/* Mobile */
+@media only screen and (max-width: 46.1875em) { 
+    .content .inner-content {
+        flex-direction: column;
+        gap: 0;
+    }
+    .content .inner-content .portal-work-schedule,
+    .content .inner-content .work-schedule {
+     width: 100%;
+    }
+    .content .work-schedule .print-schedule {
+        margin-bottom: 0;
+    }
+} 
+  /* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+   .content .inner-content {
+    flex-direction: column;
+    gap: 0;
+   }
+   .content .inner-content .portal-work-schedule,
+   .content .inner-content .work-schedule {
+    width: 100%;
+   }
+   .content .inner-content .portal-work-schedule .news-img {
+    width: 16%;
+   }
+   .content .inner-content .news-img img {
+    height: 100%;
+   }
+   .content .work-schedule .print-schedule {
+    margin-bottom: 0;
+   }
+}
+  
+  
