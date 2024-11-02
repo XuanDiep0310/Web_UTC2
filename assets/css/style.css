@@ -46,8 +46,10 @@
   padding: 14px 45px;
   border-radius: 10px;
   display: none;
+  transform: translateX(0);
+  transition: transform 2s ease;
   transition: width 0.7s ease, opacity 0.7s ease;
-  transform-origin: right;
+  /* transform-origin: right; */
 }
 .header .header-top .inner-wrap .inner-menu .inner-list li:nth-last-child(2) {
   /* margin-left: 20px;
@@ -65,7 +67,6 @@
   /* left: 35px; */
   z-index: 2;
   /* color: var(--color-si); */
-  transition: left 0.5s ease;
 }
 .header .header-top .inner-wrap .inner-menu .inner-list .bar {
   color: #ffffff;
@@ -189,10 +190,21 @@
 .menu-left .inner-menu-left ul.inner-list-left li.inner-item i {
   color: #ffffff;
   position: absolute;
-  right: 20px;
-  top: 7px;
+  right: 25px;
+  top: 9px;
   cursor: default;
-  padding: 10px 10px 10px 30px;
+  /* padding: 10px 10px 10px 30px; */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+.menu-left .inner-menu-left ul.inner-list-left li.inner-item i.up {
+  transform: rotate(180deg);
 }
 .menu-left .inner-menu-left ul.inner-list-left li.inner-item a:hover {
   background: var(--color-one);
@@ -233,9 +245,6 @@
 .inner-show-ddt,
 .inner-show-nb {
   transition: transform 0.3s;
-}
-.up {
-  transform: rotate(180deg);
 }
 .active {
   background-color: var(--color-one);
@@ -402,6 +411,9 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 992px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .section-one .inner-bottom .inner-list-enrollment .inner-box {
   margin-top: 30px;
@@ -1389,10 +1401,43 @@
 }
 /* Edd Footer */
 
-
-
-.menu-left .inner-menu-left ul.inner-list-left li.inner-item a.background-yellow {
+.menu-left
+  .inner-menu-left
+  ul.inner-list-left
+  li.inner-item
+  a.background-yellow {
   background-color: var(--color-one);
   color: var(--color-text);
   font-weight: 500;
 }
+
+/* Scroll */
+.inner-scroll {
+  width: 3.2em;
+  height: 3.2em;
+  background-color: var(--color-one);
+  position: fixed;
+  bottom: 1.2em;
+  right: 1.2em;
+  z-index: 999;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease;
+}
+
+.inner-scroll.show-btn-scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* End scroll */
