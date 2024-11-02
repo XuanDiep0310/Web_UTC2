@@ -125,7 +125,7 @@
   position: fixed;
   z-index: 999;
   top: 0;
-  /* display: none; */
+  display: none;
   transition: left 5s ease;
 }
 .menu-left .menu-left-color {
@@ -1388,3 +1388,11 @@
   }
 }
 /* Edd Footer */
+
+
+
+.menu-left .inner-menu-left ul.inner-list-left li.inner-item a.background-yellow {
+  background-color: var(--color-one);
+  color: var(--color-text);
+  font-weight: 500;
+}
