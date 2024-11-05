@@ -220,6 +220,10 @@ let autoPlaySliderStudy = setInterval(() => {
   }
   sliderStudy.style.transform = `translateX(-${s * 100}%)`;
 }, 3000);
+
+
+
+
 const scrollButton = document.getElementById("scrollButton");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
