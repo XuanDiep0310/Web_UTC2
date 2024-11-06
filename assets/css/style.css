@@ -111,12 +111,26 @@
   .header .header-bottom {
     display: none;
   }
+  .header .header-top .inner-wrap {
+    flex-wrap: nowrap;
+  }
 }
 .header .header-bottom {
   background-color: #ffffff;
   padding: 10px 0;
 }
-
+@media (max-width: 450px) {
+  .header .header-top .inner-wrap .inner-menu .inner-list a.nav-link {
+    display: none;
+  }
+  .header .header-top .inner-wrap .header-brand img {
+    width: 32px;
+    height: 32px;
+  }
+  .header .header-top .inner-wrap .header-brand-text p {
+    font-size: 10px;
+  }
+}
 /* End Header */
 /* Menu-left */
 .menu-left {

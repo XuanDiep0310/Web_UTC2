@@ -41,6 +41,7 @@ ul {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  overflow-y: hidden;
 }
 @media (min-width: 575.98px) {
   .container {
