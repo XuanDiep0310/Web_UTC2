@@ -1,0 +1,132 @@
+@import 'normalize.css';
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+:root {
+  --color-text: #271756;
+  --color-one: #facb01;
+  --color-two: #161616;
+  --color-si: #525252;
+  --color-three: #f4f4f4;
+  --color-five: #0f62fe;
+  --color-four: #c6c6c6;
+
+  --color-bg-one: #fafcfe;
+  --color-bg-two: #f0f0f0;
+  --color-bg-three: #fffae6;
+  --color-bg-four: #e9e8ee;
+
+  --color-hover-one: #d3d0dd;
+  --color-hover-two: #524578;
+
+  --font-one: "Be Vietnam Pro", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+* {
+  font-family: var(--font-one);
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Container */
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow-y: hidden;
+}
+@media (min-width: 575.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 991.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1199.98px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1399.98px) {
+  .container {
+    max-width: 1376px;
+  }
+}
+/* End Container */
+
+/* List */
+.inner-list {
+  display: flex;
+  padding-left: 0;
+}
+.inner-list li {
+  display: flex;
+  align-items: center;
+}
+.inner-list li a {
+  color: #ffffff;
+  padding: 15px 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.inner-list li a:hover {
+  color: var(--color-hover-one);
+}
+.inner-list-two {
+  justify-content: center;
+}
+.inner-list-two li a {
+  color: var(--color-text);
+  font-weight: 600;
+}
+.inner-list-two li a:hover {
+  color: var(--color-hover-two);
+}
+/* End List */
+
+/* Button */
+.button {
+  padding: 8px 16px;
+  color: var(--color-hover-two);
+  background-color: transparent;
+  border: 1px solid var(--color-hover-two);
+}
+.button-one {
+  opacity: 0.8;
+}
+.button-one:hover {
+  opacity: 1;
+}
+.button-two {
+  background-color: var(--color-one);
+  color: var(--color-two);
+  width: 180px;
+  height: 46px;
+  padding: 12px 16px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+/* End Button */
+
+
